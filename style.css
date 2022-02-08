@@ -20,7 +20,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: color 1s ease-in-out;
     animation: pp 7s linear;
+}
+
+.Viztitle:hover {
+    color: red;
 }
 
 .waves {

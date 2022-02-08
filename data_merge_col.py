@@ -24,6 +24,7 @@ import numpy as np
 # HP instream use 0.00
 
 
+
 # Ir Golf Courses reclaimed wastewater for golf courses -
 # Ir Golf Courses total irrigation for golf courses -
     # Ir Golf Courses surface irrigation for golf courses -
@@ -321,10 +322,48 @@ import numpy as np
 # state_name California
 # state_cd 6
 
-data = pd.read_csv("water_data_clean.csv")
+# The csv file with as a data frame
+df = pd.read_csv("water_data_clean.csv")
+np_data_merge = np.array([[]])
+np.set_printoptions(suppress=True)
 def main():
-    header = data.columns
-    fCol = data.iloc[0].to_numpy()
+    header = df.columns
+    # print_col_reversed(header, 0)
+    # print(df[header[7:27]])
+    # print(df['PS population served by groundwater'].astype(float) + df['PS population served by surface']).astype(float)
+    # print(df['PS population served by groundwater'].to_numpy())
+    a1 = conv_col_to_float(df['PS population served by groundwater'])
+    a2 = conv_col_to_float(df['PS population served by surface'])
+    # print(df['PS population served by groundwater'].to_numpy())
+    # print(a1)
+    print(merge_col(a1, a2, "what"))
+
+# Takes in a column, converts column values to float, zeroes out missing values
+# col - the input column 
+# returns an np array of the col
+def conv_col_to_float(col):
+    # print([ord(c) for c in c1[i]])
+    return np.array([0.00 if (col[i][0] == str(chr(45))) else float(col[i]) for i in range(len(col))])
+
+
+# Takes in two columns as np arrays and merges to the new column "name"
+# --column data values must be of type float--
+# c1 - column 1 as an np array
+# c2 - column 2 as an np array
+# name - destination column name
+# returns a map of name to col
+def merge_col(c1, c2, name):
+    rel_c1 = c1.copy()
+    rel_c2 = c2.copy()
+    # print(rel_c1)
+    # print(rel_c2)
+    # print(name)
+    for i in range(len(c1)):
+        rel_c1[i] = rel_c1[i] + rel_c2[i]
+    return {name:rel_c1}
+
+def print_col_reversed(header, col):
+    fCol = df.iloc[col].to_numpy()
     for i in reversed(range(len(header))):
         print(header[i] + " " + str(fCol[i]))
 
