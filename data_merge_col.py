@@ -292,6 +292,32 @@ import numpy as np
                 # D s-s groundwater withdrawals 2.9
 
 
+# Total Population 1195.16
+# year 1985
+# county_nm Alameda
+# county_cd 1
+# state_name California
+# state_cd 6
+
+# The csv file with as a data frame
+df = pd.read_csv('water_data_clean.csv')
+np_data_merge = np.array([[]])
+np.set_printoptions(suppress=True)
+def main():
+    header = df.columns
+    # print_col_reversed_c(header, 0)
+    # df2 = pd.DataFrame.from_dict({header[i]:[1,2,3] for i in range(len(header))}, orient='columns')
+    # df2.to_csv('water_data_merged.csv')
+    # print(df[header[7:27]])
+    # print(df['PS population served by groundwater'].to_numpy())
+    # a1 = conv_col_to_float(df['PS population served by groundwater'])
+    # a2 = conv_col_to_float(df['PS population served by surface'])
+    # print(df['PS population served by groundwater'].to_numpy())
+    # print(merge_cols(np.array([a1, a2]), 'what'))
+    print(pd.DataFrame.from_dict(public_supply_merge()))
+
+
+### Format ###
 # PS number of facilities -
 # PS reclaimed wastewater -
 # PS per capita use -
@@ -314,58 +340,55 @@ import numpy as np
     # PS population served by surface 967.160
     # PS population served by groundwater 185.950
 
+# Merges relevant public supply data
+# Returns a map of new columns to names
+def public_supply_merge():
+    keep = np.array(['PS number of facilities','PS reclaimed wastewater','PS per capita use',
+                        'PS public use and losses'])
+    col = {keep[i]:conv_col_to_float(df[keep[i]]) for i in range(len(keep))}
+    ps_del = np.array(['PS deliveries to thermoelectric','PS deliveries to industrial',
+                            'PS deliveries to commercial', 'PS deliveries to domestic'])
+    col['PS total deliveries'] = merge_cols(cols_to_conv_np(ps_del))
+    ps_s_s_with = np.array(['PS s-s surface-water withdrawals.1','PS s-s surface-water withdrawals',
+                                'PS s-s groundwater withdrawals.1','PS s-s groundwater withdrawals'])
+    col['PS total s-s withdrawals total'] = merge_cols(cols_to_conv_np(ps_s_s_with))
+    return col
 
-# Total Population 1195.16
-# year 1985
-# county_nm Alameda
-# county_cd 1
-# state_name California
-# state_cd 6
-
-# The csv file with as a data frame
-df = pd.read_csv("water_data_clean.csv")
-np_data_merge = np.array([[]])
-np.set_printoptions(suppress=True)
-def main():
-    header = df.columns
-    # print_col_reversed(header, 0)
-    # print(df[header[7:27]])
-    # print(df['PS population served by groundwater'].astype(float) + df['PS population served by surface']).astype(float)
-    # print(df['PS population served by groundwater'].to_numpy())
-    a1 = conv_col_to_float(df['PS population served by groundwater'])
-    a2 = conv_col_to_float(df['PS population served by surface'])
-    # print(df['PS population served by groundwater'].to_numpy())
-    # print(a1)
-    print(merge_col(a1, a2, "what"))
+# takes in an np arr of column names
+# returns an np arr of float converted columns
+def cols_to_conv_np(cols):
+    return np.array([conv_col_to_float(df[cols[i]]) for i in range(len(cols))])
 
 # Takes in a column, converts column values to float, zeroes out missing values
 # col - the input column 
 # returns an np array of the col
 def conv_col_to_float(col):
     # print([ord(c) for c in c1[i]])
-    return np.array([0.00 if (col[i][0] == str(chr(45))) else float(col[i]) for i in range(len(col))])
-
+    c_arr = col.to_numpy()
+    return np.array([0.00 if (str(c_arr[i])[0] == str(chr(45))) else float(c_arr[i]) for i in range(len(col))])
 
 # Takes in two columns as np arrays and merges to the new column "name"
 # --column data values must be of type float--
-# c1 - column 1 as an np array
-# c2 - column 2 as an np array
+# cols - np array of columns being merged
 # name - destination column name
 # returns a map of name to col
-def merge_col(c1, c2, name):
-    rel_c1 = c1.copy()
-    rel_c2 = c2.copy()
-    # print(rel_c1)
-    # print(rel_c2)
-    # print(name)
-    for i in range(len(c1)):
-        rel_c1[i] = rel_c1[i] + rel_c2[i]
-    return {name:rel_c1}
+def merge_cols(cols):
+    ret = np.array([])
+    if (len(cols)):
+        ret = cols[0].copy()
+    for i in range(len(cols)):
+        for j in range(len(cols[i])):
+            ret[j] += cols[i][j]
+    return ret
 
-def print_col_reversed(header, col):
+def print_col_reversed(header):
+    for i in reversed(range(len(header))):
+        print(header[i])
+
+def print_col_reversed_c(header, col):
     fCol = df.iloc[col].to_numpy()
     for i in reversed(range(len(header))):
-        print(header[i] + " " + str(fCol[i]))
+        print(header[i] + ' ' + str(fCol[i]))
 
 if __name__ == "__main__":
     main()
