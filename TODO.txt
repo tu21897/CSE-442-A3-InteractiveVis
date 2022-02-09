@@ -1,4 +1,4 @@
-Use pandas in python to merge relevant columns
+Use pandas in python to merge relevant columns -- DONE
 Create 1-3 visualizations in tableau
 Upload visualizations to tableau public
 Extract html/css from tableau public and upload to website
