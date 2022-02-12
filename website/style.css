@@ -27,7 +27,7 @@ body {
 .top_border {
     height: 100px;
     width: 100%;
-    background: url(silhouette_final_mirror2.png);
+    background: url(images/silhouette_final_mirror2.png);
     background-repeat: repeat no-repeat;
     top: 0%;
 }
@@ -61,7 +61,7 @@ body {
     top: -17.2%;
     height: 69%;
     width: 100%;
-    background: url(2022_02_06_0ml_KlekiCROPINFINITE.png);
+    background: url(images/waves_infinite.png);
     background-size: 50% 25%;
     background-repeat: repeat-x;
     animation: flow_x 5s linear;
@@ -103,7 +103,7 @@ body {
 .arrow {
     width: 30%;
     height: 50%;
-    background: url(down_arrow_final.png);
+    background: url(images/down_arrow_final.png);
     background-size: 33% 33%;
     background-repeat: repeat no-repeat;
 }
@@ -113,7 +113,7 @@ body {
     position: absolute;
     height: 100px;
     width: 100%;
-    background: url(silhouette_final.png);
+    background: url(images/silhouette_final.png);
     background-repeat: repeat no-repeat;
     bottom: 0px;
 }
@@ -122,7 +122,7 @@ body {
     position: absolute;
     height: 100px;
     width: 100%;
-    background: url(silhouette_final_mirror.png);
+    background: url(images/silhouette_final_mirror.png);
     background-repeat: repeat no-repeat;
     bottom: -100px;
     z-index: 1;
@@ -175,7 +175,7 @@ body {
     width: 100%;
     bottom: 0px;
     left: 0px;
-    background: url(silhouette_final.png);
+    background: url(images/silhouette_final.png);
     background-repeat: repeat no-repeat;
 }
 

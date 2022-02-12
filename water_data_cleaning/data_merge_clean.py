@@ -6,9 +6,9 @@ import numpy as np
 #
 
 # The read csv file
-read = 'water_data_shortname_nounits.csv'
+read = 'water_data_cleaning/water_data/water_data_shortname_nounits.csv'
 # The write csv file
-write = 'water_data_merged_cleaned.csv'
+write = 'water_data_cleaning/water_data/water_data_merged_cleaned.csv'
 # The csv file with as a data frame
 df = pd.read_csv(read)
 # Suppress numpy float sci form
@@ -178,13 +178,13 @@ def main():
 
 
 # Prints debug stats on cols removed, added, etc. to console
-# Outputs the removed column names to water_data_removed_column_names.txt
+# Outputs the removed column names to water_data_cleaning/water_data_removed_column_names.txt
 # dest_df - the data frame compared to the original data frame
 def debug_stats(dest_df):
     print(dest_df)
     num_col_df = len(df.columns)
     num_col_dest_df = len(dest_df.columns)
-    rm_file_name = 'water_data_removed_column_names.txt'
+    rm_file_name = 'water_data_cleaning/water_data_removed_column_names.txt'
     removedCols = set(df.columns).symmetric_difference(set(df.columns).intersection(set(dest_df.columns)))
     num_col_rmcol = len(removedCols)
     rm_file = open(rm_file_name, 'w')
