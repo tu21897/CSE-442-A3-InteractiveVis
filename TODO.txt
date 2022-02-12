@@ -1,11 +1,14 @@
 Use pandas in python to merge relevant columns -- DONE
-Create 1-3 visualizations in tableau
-Upload visualizations to tableau public
-Extract html/css from tableau public and upload to website
-Edit visualization style to match page design
-Add other elements to page through html/css/js
-    Animated faucet
-    Drain water function
-    Scroll lock on duration
-    Arrow guides
-Upload webpage online
+Create 1-3 visualizations in tableau -- DONE
+Upload visualizations to tableau public -- DONE
+Extract html/css from tableau public and upload to website -- DONE
+Edit visualization style to match page design -- DONE
+Add other elements to page through html/css/js-- DONE
+    Animated faucet -- TOO HARD
+    Drain water function -- DONE
+    Scroll lock on duration -- DONE
+    Arrow guides -- DONE
+Upload webpage online -- DONE
+Design Decisions
+Development Process
+

@@ -1,0 +1,86 @@
+# From https://www.usgs.gov/mission-areas/water-resources/science/water-use-terminology#overview
+
+animal-specialties water use–water use associated with the production of fish in captivity except for fish hatcheries which were in Commercial, and the raising of horses and such fur-bearing animals as rabbits and pets. 
+
+1985: Fish farming included in Livestock
+1990-1995: Animal specialties (excludes fish hatcheries)
+2000 and later: former Animal specialties use reported in Livestock (horses) and Aquaculture categories (fish hatcheries and fish farms)
+
+aquaculture water use–water use associated with the farming of finfish, shellfish, and other organisms that live in water, and offstream water use associated with fish hatcheries. 
+
+1985: Water use for fish farming included in Livestock
+1990-1995: Water use was reported in Animal Specialties (fish farming) and Commercial (fish hatcheries)
+2000 and later: Aquaculture
+
+commercial water use–water for motels, hotels, restaurants, office buildings, other commercial facilities, military and nonmilitary institutions, and (for 1990 and 1995) offstream fish hatcheries.  Water may be obtained from a public-supply system or may be self-supplied.  Commercial water-use estimates were included in industrial water use until 1985, then were reported as a separate category. Commercial water use estimates were last reported nationally for 1995.
+
+1985: Self-supplied commercial water use first reported as separate category from industrial
+1990-1995: Commercial category includes offstream fish hatchery water use for some States
+2000 and later: Commercial category not estimated nationally: offstream fish hatchery water use is reported in the Aquaculture category
+
+consumptive use–the part of water withdrawn that is evaporated, transpired, incorporated into products or crops, consumed by humans or livestock, or otherwise not available for immediate use.  Water returned to a different watershed than the point of withdrawal (interbasin transfer) is not considered a consumptive use. Also referred to as water consumed. 
+
+1960-1995: Consumptive use reported by water-use category
+2000-2010: Consumptive use not estimated nationally
+2015: Consumptive use reported for irrigation and thermoelectric power categories
+
+conveyance loss-water that is lost in transit from a pipe, canal, conduit, or ditch by leakage or evaporation. Leakage from an irrigation ditch, for example, may percolate to a groundwater source and be available for further use.
+
+1955-1995: Conveyance losses reported nationally
+2000 and later: Conveyance losses not estimated nationally
+
+domestic water use–water used for indoor household purposes such as drinking, food preparation, bathing, washing clothes and dishes, flushing toilets, and outdoor purposes such as watering lawns and gardens. Domestic water use includes potable and non-potable water provided to households by a public water supplier (domestic deliveries) and self-supplied water.  
+
+1950-1955: Rural (included Livestock: estimates were retroactively allocated to Rural Domestic and Livestock in later reports)
+1960-1980: Rural Domestic
+1985 and later: Domestic
+
+hydroelectric power water use–the use of water in the generation of electricity at plants where the turbine generators are driven by moving water. Hydroelectric water use is most commonly an instream use. Hydroelectric power water use was referred to as water power from 1950-1960.
+
+1950-1960: Water Power
+1965-1995: Hydroelectric Power
+2000 and later: Hydroelectric Power category not estimated nationally
+
+industrial water use–water used for fabrication, processing, washing, and cooling.  Includes industries such as chemical and allied products, food, mining, paper and allied products, petroleum refining, and steel. 
+
+1950: Industrial, included thermoelectric power use
+1955: Industrial, included thermoelectric power use, subtotals for thermoelectric power use (fuel-electric power) and other provided by watershed but not by State
+1960-1980: Industrial, included thermoelectric power use, subtotals for thermoelectric power use (fuel-electric power) and "other industrial" uses
+1985 and later: Industrial. Separate categories for thermoelectric power, self-supplied commercial and mining split from other industrial. The term industrial water use was used 1985-1995 to describe the combined public-supply deliveries to industrial users and self-supplied industrial withdrawals.
+
+livestock water use–water used for livestock watering, feedlots, dairy operations, and other on-farm needs. Types of livestock include dairy cows and heifers, beef cattle and calves, sheep and lambs, goats, hogs and pigs, horses and poultry.
+
+1950: Rural (included self-supplied domestic: estimates were allocated to Rural Domestic and Livestock in later reports)
+1960-1980: Livestock subcatgory under Rural
+1985: Livestock, including water use for fish farming
+1990-1995: Livestock. Subcategory of Animal Specialties included horses and fish farming
+2000 and later: Livestock. Separate category of Aquaculture includes fish farming and fish hatcheries
+
+mining water use–water used for the extraction of naturally occurring minerals including solids (such as coal, sand, gravel, and other ores), liquids (such as crude petroleum), and gases (such as natural gas).  Also includes uses associated with quarrying, milling and other preparations customarily done at the mine site, injection of water for secondary oil recovery or for unconventional oil and gas recovery (such as hydraulic fracturing), and other operations associated with mining activity.  Does not include water associated with dewatering of the aquifer that is not put to beneficial use. Also does not include water used in processing, such as smelting, refining petroleum, or slurry pipeline operations.  These processing uses are included in industrial water use.
+
+1950-1980: included in Industrial
+1985 and later: Mining
+
+public-supply deliveries–amount of water delivered from a public supplier to users for domestic, commercial, industrial, thermoelectric-power, or public-use purposes.  
+
+1960-1965: combined estimate of deliveries for industrial and commercial use broken down by air conditioning and other, and combined estimate for domestic deliveries and losses
+1970-1975: combined estimate of deliveries for industrial and commercial use, and combined estimate for domestic use and losses
+1980: combined estimate of deliveries for industrial and commercial use, and combined estimate for domestic and public use including losses
+1985-1995: estimates of deliveries for domestic, commercial, industrial, thermoelectric power, and public use and losses
+2000: no estimates of deliveries
+2005 and later: estimates of deliveries for domestic use and a combined estimate of all other uses and system losses
+
+public-supply water use–water withdrawn by public and private water suppliers that furnish water to at least 25 people or have a minimum of 15 connections. Public suppliers provide water for a variety of uses, such as domestic, commercial, industrial, thermoelectric-power, and public water use.  See also commercial water use, domestic water use, industrial water use, public-supply deliveries, public water use, and thermoelectric-power water use.
+
+1950: Municipal
+1955 and later: Public Supply
+
+self-supplied water use–water withdrawn from a groundwater or surface-water source by a user rather than being obtained from a public supply.
+
+thermoelectric-power water use–water used in the process of generating electricity with steam-driven turbine generators. Term used in previous water-use circulars to describe the combined public-supply deliveries to thermoelectric-power plants and self-supplied thermoelectric-power withdrawals.
+
+1950: Included in Industrial
+1955: Fuel-electric power subcategory in Industrial (data presented by watershed but not by State)
+1960-1980: Fuel-electric power subcategory in Industrial
+1985-1995: Thermoelectric power, subcategories by fuel type (fossil fuel, geothermal, nuclear)
+2000 and later: Thermoelectric power, subcategories by cooling-system type (once-through, closed-loop/recirculation)
