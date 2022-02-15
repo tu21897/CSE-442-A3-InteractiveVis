@@ -1,8 +1,3 @@
-# A3-california-water-usage
+# Exploring water usage in California
 
-Team members: Tu Nguyen, Eric Banisadr, Wei Jun Tan
-
-
-Project page: https://cse442-22w.github.io/A3-california-water-usage/
-
-Modify or replace `index.html` in the `docs` folder to update your project page.
+Website page: https://tu21897.github.io/Exploring-Water-Usage-in-California---Visualized/
