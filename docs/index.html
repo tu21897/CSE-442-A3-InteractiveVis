@@ -1,67 +1,186 @@
 <!DOCTYPE html>
+<!--
+  This defines a webpage that showcase an interactive visualization that shows the water usage
+  distribution in California.
+  -->
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>A3</title>
-    <script src="scripts.js"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSE 442 A3</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
     <!-- Page 1 -->
-    <div class="frontpage">
-        <div class="top_border"></div>
-        <div class="viztitle">
-            <h1 class="title">California</h1>
-            <h2 class="subtitle">Exploring Water Usage</h2>
-        </div>
-        <div class="water">
-            <div class="waves"></div>
-        </div>
-        <div class="scroll">
-            <div class="arrow"></div>
-            <h2 class="scroll_text">Scroll</h2>
-            <div class="arrow"></div>
-        </div>
-        <div class="silhouette"></div>
-        <div class="silhouette_mirror"></div>
-        <i class="half-ellipse"></i>
-    </div>
+    <section class="frontpage">
+      <div class="top_border"></div>
+      <header>
+        <h1>California</h1>
+        <h2 class="subtitle invisible">Exploring Water Usage</h2>
+      </header>
+      <div class="water">
+        <div class="waves"></div>
+      </div>
+      <div class="scroll invisible">
+        <div class="arrow"></div>
+        <h3 class="scroll_text">Scroll</h3>
+        <div class="arrow"></div>
+      </div>
+      <div class="silhouette"></div>
+      <div class="silhouette_mirror"></div>
+      <i class="half-ellipse"></i>
+    </section>
     <!-- Page 2 -->
-    <div class="container">
-        <div class='tableauPlaceholder' id='viz1644620998630' style='position: relative'>
-            <object class='tableauViz'  style='display:none'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='cali_water_viz&#47;Dashboard' />
-                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-                <param name='filter' value='publish=yes' />
-            </object>
+    <section class="container">
+      <div class='tableauPlaceholder' id='viz1644620998630' style='position: relative'>
+        <object class='tableauViz'  style='display:none'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='cali_water_viz&#47;Dashboard' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+
+      <div class="tab_menu">
+        <div class="tab_x">
+          <div class="tab_xx">
+            <button class="tablinks2" onclick="displayButton(event, 'Design Decisions')"><b>Design Decisions</b></button>
+            <button class="tablinks2" onclick="displayButton(event, 'Development Process')"><b>Development Process</b></button>
+          </div>
         </div>
-        <div class="designDecisions">
-            <h2>Design Decisions</h2>
-            <em>[TODO: add a rationale for your design decisions.
-                How did you choose your particular visual encodings and interaction techniques?
-                What alternatives did you consider and how did you arrive at your ultimate choices?]
-            </em>
+        <div class="tab_y">
+          <div class="tab">
+            <button class="tablinks" onclick="displayInfo(event, 'Overview2')"><b>Overview</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Size & Position')"><b>Size & Position</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Chart Types & Filters')"><b>Chart Types & Filters</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Color & Labels')"><b>Color & Labels</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Axes & Shapes')"><b>Axes & Shapes</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Overview')"><b>Overview</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Data Cleaning')"><b>Data Cleaning</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Visualization')"><b>Visualization</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'Image Processing')"><b>Image Processing</b></button>
+            <button class="tablinks" onclick="displayInfo(event, 'HTML/CSS/JS')"><b>HTML/CSS/JS</b></button>
+          </div>
+          <div id="Overview" class="tabcontent" style="display: none;">
+            <h3>Overview - 60 Hours total</h3>
+            <p>The development process is broken down into four main sections. Each section represents a different portion of the main website.</p>
+            <h4>Data Cleaning - 20 Hours</h4>
+            <p>Interpreting the  structure of the data, learning Pandas to clean data, writing a script to clean the data</p>
+            <h4>Visualization - 10 Hours</h4>
+            <p>Figuring out which portion of the data to visualize, designing the visualization</p>
+            <h4>Image Processing - 5 Hours</h4>
+            <p>Designing elements for the website, creating a script to round off pixel colors, change image colors, and make images transparent</p>
+            <h4>HTML/CSS/JS - 25 Hours</h4>
+            <p>Designing the website layout/functionality, learning HTML/CSS/JS, Implementing HTML/CSS/JS</p>
+            <h4>Work split</h4>
+            <p>Wei Jun Tan - Cleaned up code, restructured files, mobile support, designed website/visualization, implemented website elements</p>
+            <p>Eric Banisadr - Processed page elements, designed website/visualization, brainstormed visualization ideas, found data sets</p>
+            <p>Tu Nguyen - Designed website/visualization, cleaned data, implemented visualization, implemented website elements</p>
+          </div>
+          <div id="Data Cleaning" class="tabcontent" style="display: none;">
+            <h3>Data Cleaning - 20 Hours</h3>
+            <p>The original data set provided by USGS.gov was far from ideal. There were over 250 columns, some related, some unrelated. It would have been time consuming and error prone to attempt to build a visualization off of this set of columns. To make matters worse, much of the data was incomplete or inconsistently entered with varying data types. Therefore, the first reasonable step of the project was to clean the data. This was done in order to develop reasonable insights to guide towards the data and simplify the visualization creation process. Cleaning the data was split into two main parts: interpreting and organizing structure of data and writing scripts to merge relevant data and remove inconsistencies. </p>
+            <h4>Interpreting and organizing structure of data - 10 Hours</h4>
+            <p>Most of the time here was spent figuring out which columns to merge and why. The data already had pre-aggregated data, however it was inconsistent. This was because sub-columns of aggregate columns were not always summed correctly. From this information, columns were organized into parent-child relationships with aggregate columns being the parent. The decision was made to sum off sub-columns to generate new aggregate columns due to the inconsistencies in the pre-existing aggregate columns.</p>
+            <h4>Writing scripts to merge relevant data and remove inconsistencies - 10 Hours</h4>
+            <p>The next step was to shorten column names, convert the given tsv to csv, and remove unnecessary text in the file. The data was then converted into a pandas data frame for cleaning. New aggregate columns were generated off of root-children from the determined structure, while zero-data columns were dropped. The result was a column reduction of over 200. In the end, there were about 70 aggregate columns remaining, each categorized by water consumptive use, withdrawals, and demographic data and sub categorized by industry.</p>
+          </div>
+          <div id="Visualization" class="tabcontent" style="display: none;">
+            <h3>Visualization - 10 Hours</h3>
+            <h4>Reasoning, design & implementation - 5 Hours</h4>
+            <p>For the visualization, we opted to use an embedded Tableau visualization. This was because most of the team had experience with Tableau. We were willing to lose some expressiveness in favor of ease-of-use because some of the team was unfamiliar with web development. It would have likely been too overwhelming to learn a new visualization language on top of learning web development and the tools for data cleaning. From there, we designed a visualization that we thought struck balance between amount interaction and amount of visualization elements</p>
+            <h4>Difficult elements and problems - 5 Hours</h4>
+            <p>The hardest part of the visualization was encoding each element to be reactive based on filters and selections from other elements. There were a lot of dependencies to keep track of in order to ensure a fluid visualization.</p>
+            <p>The most time consuming bug was placing a reactive stationary percentage in the donut charts. This was because it was difficult to know which years were selected due to the years being repeated multiple times for each county. The solution was to treat years as a separated sum of a scalar multiples of each year.</p>
+            <p>Ex. Selected(1985, 1995, 2015) -> Count(Year) * 1985 + Count(Year) * 1995 Count(Year) * 2015</p>
+            </p>
+          </div>
+          <div id="Image Processing" class="tabcontent" style="display: none;">
+            <h3>Image Processing - 5 Hours</h3>
+            <p>In order to match the design and look of the website, some elements need to be created and processed to fit in the webpage. </p>
+            <h4>Figure out images to use - 2 Hours</h4>
+            <p>The images created for the website needed to be either meaningful or serve a functional purpose. For example, arrows were used to guide the user through the website while the silhouette lake reflection represents the different sectors (residential, irrigation, energy, city) and their consumptive use.</p>
+            <h4>Script to change image color, round image color, and make image transparent - 3 Hours</h4>
+            <p>Python offers a library for basic image processing that was convenient for this part of the project. Image pixels were converted to rgba tuples and rounded off to a single color, made transparent, or changed to another color.</p>
+          </div>
+          <div id="HTML/CSS/JS" class="tabcontent" style="display: none;">
+            <h3>HTML/CSS/JS - 25 Hours</h3>
+            <p>One of the primary concerns in developing the frontend of the website was balancing a visually appealing layout, a concise and accurate display of information, and engaging elements. Secondary concerns included mobile support and a responsive design across all resolutions. Animations were added to capture audience attention while arrow prompts were used to actively engage the audience. </p>
+            <h4>HTML/CSS/JS experimentation - 15 Hours</h4>
+            <p>A large portion of the time spent developing the website was through experimentation on how to use the frontend languages in general. As a result, much of the code was uncommented, unorganized, and suboptimal.  From here, a decent amount of time was spent on restructuring code and style changes. This was to meet the web language style guidelines to a reasonable degree.</p>
+            <h4>Implementing HTML/CSS/JS - 10 Hours</h4>
+            <p>The most difficult part of the frontend development was creating a responsive layout based on resolution of the device. The website needed to be reasonably readable and interactable regardless of the display it is on. This was achieved through scaling and positioning elements based on ratios rather than fixed values.</p>
+          </div>
+          <div id="Overview2" class="tabcontent" style="display: block;">
+            <h3>Overview</h3>
+            <p>The visualization was primarily designed to guide the user through how different areas of California used water compared to each other. </p>
+            <p>This was made possible through a visualization that utiizes:</p>
+               <li>An interactive map and chart</li>
+               <li>Select and filter operations that affect the whole visualization</li>
+               <li>Percentage population/consumptive use comparisons</li>
+               <li>Consumptive use sorting by county</li>
+               <li>Charts that complement each other</li>
+          </div>
+          <div id="Size & Position" class="tabcontent" style="display: none;">
+            <h3>Size & Position</h3>
+            <h4>Size</h4>
+            <p>Visualization elements were sized based on importance and focus priority. The largest element is the map because it is the main interaction piece. While the second largest element, the dot chart, is used as a complementary interaction. The donut charts are not interactable and only display adjusted information, hence they are the smallest chart element. </p>
+            <h4>Position</h4>
+            <p>To take it even further, elements were also positioned based on importance. With the level of importance moving from left to right first and from up to down second. Based on this, the map and title are prioritized. While the information disclaimer and donut charts are secondary.</p>
+          </div>
+          <div id="Chart Types & Filters" class="tabcontent" style="display: none;">
+            <h3>Chart Types & Filters</h3>
+            <h4>Chart Types</h4>
+            <h5>Map</h5>
+            <p>The map offers a visual representation of the area and relative position to other counties. This allows a very visual selection that facilitates easy comparisons between areas.
+            </p>
+            <h5>Stacked Dot Chart</h5>
+            <p>Since consumptive use is in Mgal/day in five year windows. The stacked dot plot lets the user compare discrete values of consumptive use between years; and allows the user to select counties close to each other in consumptive use for comparison.
+            </p>
+            <h5>Donut Chart</h5>
+            <p>The donut chart allows for the comparison of select counties to the entirety of California. It acts as a fixed comparison point for reference that conveys both demographic and measure data.
+            </p>
+            <h4>Filters</h4>
+            <h5>Checkbox</h5>
+            <p>The year checkbox filter allows the user to compare subsets of years</p>
+            <h5>Map select</h5>
+            <p>This is the main select function of the visualization. It provides the filters for the entire sheet. The select functions include box select, free-form select, circle select, and single select on the map. Each select allows the user to highlight specific areas of the map.
+            </p>
+            <h5>Chart select</h5>
+            <p>The main reason for the chart select is to zoom-in on closely related data or highlight specific sections of previous selects</p>
+          </div>
+          <div id="Color & Labels" class="tabcontent" style="display: none;">
+            <h3>Color & Labels</h3>
+            <h4>Color</h4>
+            <p>Color was chosen primarily based on what would fit the theme of the project, visual aesthetics, and contrast. A light blue was chosen for the majority of elements to symbolize water while the grayish black was chosen to contrast and emphasize the visualization elements. Bright red was chosen as the highlighted warnings because it universally symbolizes danger or alert. Dim white text was used to contrast with the background while minimizing the color clash between white and black.</p>
+            <p>The next color consideration is color blindness. Most of Tableau’s color palettes are reasonably color blind friendly. The main issue with the colored elements on a black background is that some elements will appear invisible to color blind users. This was one of the compromises made to keep the overall style of the webpage.</p>
+            <h4>Labels</h4>
+            <p>Labels were placed on elements that needed additional context. For example, dots are labeled by counties, donut chart fill is labeled by percent, total is labeled by the main body(California), red label for explaining why some chunks of 5 year data were missing, definition labels to explain uncommon terms (“Consumptive Use”), and individual hover labels to see specific data values. </p>
+          </div>
+          <div id="Axes & Shapes" class="tabcontent" style="display: none;">
+            <h3>Axes & Shapes</h3>
+            <h4>Axes</h4>
+            <p>For the axes of the stack dot chart, counties are plotted on the y-axis while Mgal/d of consumptive use was plotted on the x-axis. This was mainly for space efficiency as the opposite orientation would likely not fit on the page. X grid lines are dotted to allow for better visibility of dots while Y grid lines are disable to reduce cluttering. Grid lines are spaced on a log scale to separate close data values. </p>
+            <h4>Shapes</h4>
+            <p>Map shapes are the same as county shapes. Chart dots are hollow to see closely related values</p>
+          </div>
         </div>
-        <div class="designProcess">
-            <h2>Development Process</h2>
-            <em>[TODO: describe how the work was split among the team members.
-                Include a commentary on the development process, including answers to the following questions: 
-                Roughly how much time did you spend developing your application (in people-hours)? 
-                What aspects took the most time?]
-            </em>
-        </div>
-        <div class="bottom_border"></div>
-    </div>
-</body>
+      </div>
+      <div class="bottom_border"></div>
+    </section>
+  </body>
 </html>

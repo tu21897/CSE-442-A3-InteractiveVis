@@ -1,0 +1,220 @@
+TP (OT-C) reclaimed wastewater
+A s-s groundwater withdrawals
+NTP total s-s withdrawals.2
+GTP s-s groundwater withdrawals
+TTP consumptive use.1
+PS population served by groundwater
+D total s-s withdrawals.2
+C total s-s withdrawals.2
+WT reclaimed wastewater released by public wastewater facilities
+NTP total s-s withdrawals groundwater
+TP (OT-C) number of facilities
+Ir Total total s-s withdrawals.2
+Ir Crop sprinkler irrigation for crops
+D s-s groundwater withdrawals.1
+TTP consumptive use
+TP (OT-C) total s-s withdrawals
+C s-s groundwater withdrawals.1
+Ir Golf Courses surface irrigation for golf courses
+D s-s surface-water withdrawals
+GTP deliveries from public supply
+Ir Total s-s groundwater withdrawals
+FTP consumptive use.1
+Ir Crop s-s groundwater withdrawals for crops
+L (Stock) total s-s withdrawals surface
+L (Stock) s-s surface-water withdrawals.1
+A total consumptive use
+L (Stock) total s-s withdrawals.2
+Ir Crop surface irrigation for crops
+TP (OT-C) total consumptive use
+M s-s groundwater withdrawals
+L (Stock) s-s groundwater withdrawals
+L (Animal Specialties) total s-s withdrawals.1
+Ir Total s-s surface-water withdrawals
+TTP s-s surface-water withdrawals.1
+I total s-s withdrawals.2
+TP (CL-C) reclaimed wastewater
+C s-s surface-water withdrawals.1
+M consumptive use
+FTP deliveries from public supply
+HP number of instream facilities
+GTP s-s surface-water withdrawals.1
+L (Animal Specialties) s-s surface-water withdrawals
+I s-s surface-water withdrawals
+NTP consumptive use
+Ir Golf Courses consumptive use for golf courses
+TP (CL-C) total s-s withdrawals groundwater
+L (Stock) s-s groundwater withdrawals.1
+I consumptive use
+A s-s groundwater withdrawals.1
+L (Animal Specialties) total s-s withdrawals
+Ir Golf Courses total irrigation for golf courses
+I total s-s withdrawals.1
+L (Stock) total s-s withdrawals
+TTP s-s groundwater withdrawals.1
+HP surface s-s offstream withdrawals
+A consumptive use.1
+PS deliveries to industrial
+FTP total s-s withdrawals groundwater
+FTP total s-s withdrawals surface
+PS total s-s withdrawals
+TP (CL-C) s-s surface-water withdrawals.1
+TP (OT-C) total s-s withdrawals.1
+M total s-s withdrawals surface
+D s-s surface-water withdrawals.1
+TP (CL-C) total consumptive use
+D total s-s withdrawals surface
+TP (OT-C) consumptive use.1
+A total s-s withdrawals.2
+FTP s-s groundwater withdrawals.1
+TP (CL-C) consumptive use.1
+L (Animal Specialties) s-s groundwater withdrawals
+M s-s surface-water withdrawals
+A total s-s withdrawals groundwater
+NTP s-s groundwater withdrawals.1
+TP (CL-C) s-s groundwater withdrawals.1
+GTP s-s surface-water withdrawals
+TP (CL-C) s-s surface-water withdrawals
+A consumptive use
+Ir Golf Courses total s-s withdrawals for golf courses
+C s-s groundwater withdrawals
+FTP consumptive use
+I deliveries from public supply
+M s-s groundwater withdrawals.1
+L (Stock) s-s surface-water withdrawals
+GTP s-s groundwater withdrawals.1
+TP (OT-C) s-s groundwater withdrawals
+Ir Crop reclaimed wastewater for crops
+GTP reclaimed wastewater
+HP offstream surface-water withdrawals
+FTP s-s groundwater withdrawals
+L s-s groundwater withdrawals
+L (Animal Specialties) consumptive use
+TP (CL-C) consumptive use
+Ir Crop s-s surface-water withdrawals for crops
+TTP total s-s withdrawals.1
+PS s-s groundwater withdrawals
+Ir Golf Courses conveyance loss for golf courses
+L s-s surface-water withdrawals
+NTP total s-s withdrawals surface
+A total s-s withdrawals.1
+PS s-s groundwater withdrawals.1
+L (Stock) consumptive use
+Ir Crop conveyance loss for crops
+TP (CL-C) power generated
+TP (OT-C) total s-s withdrawals total
+NTP s-s surface-water withdrawals.1
+L (Animal Specialties) total s-s withdrawals.2
+Ir Total sprinkler irrigation
+L (Animal Specialties) s-s surface-water withdrawals.1
+Ir Total consumptive use.1
+FTP total s-s withdrawals.1
+WT number of wastewater facilities
+Ir Total surface irrigation
+C total s-s withdrawals surface
+PS population served by surface
+I consumptive use.1
+TP (CL-C) total s-s withdrawals.1
+Ir Crop microirrigation for crops
+PS total population served
+TP (OT-C) s-s surface-water withdrawals.1
+L (Stock) total s-s withdrawals.1
+TP (OT-C) total s-s withdrawals plus deliveries
+L (Animal Specialties) total s-s withdrawals surface
+Ir Crop total s-s withdrawals for crops
+TP (OT-C) s-s groundwater withdrawals.1
+C consumptive use.1
+GTP consumptive use.1
+GTP total s-s withdrawals groundwater
+D reclaimed wastewater
+I s-s groundwater withdrawals
+TP (OT-C) power generated
+NTP consumptive use.1
+C total s-s withdrawals groundwater
+A s-s surface-water withdrawals
+Ir Golf Courses s-s surface-water withdrawals for golf courses
+PS deliveries to domestic
+TTP s-s surface-water withdrawals
+TP (OT-C) s-s surface-water withdrawals
+C s-s surface-water withdrawals
+NTP deliveries from public supply
+L (Animal Specialties) total s-s withdrawals groundwater
+TTP s-s groundwater withdrawals
+L (Animal Specialties) total consumptive use
+state_cd
+TP (CL-C) s-s groundwater withdrawals
+D deliveries from public supply
+NTP s-s groundwater withdrawals
+TP (CL-C) total s-s withdrawals plus deliveries
+Ir Total s-s surface-water withdrawals.1
+Ir Total consumptive use
+HP power generated by instream use
+TP (OT-C) deliveries from public supply
+TP (CL-C) total s-s withdrawals total
+Ir Crop consumptive use for crops
+Ir Golf Courses reclaimed wastewater for golf courses
+Ir Total total s-s withdrawals.1
+PS s-s surface-water withdrawals
+M consumptive use.1
+C total s-s withdrawals.1
+TP (OT-C) total s-s withdrawals groundwater
+I total s-s withdrawals groundwater
+TTP total s-s withdrawals groundwater
+GTP total s-s withdrawals.2
+TP (CL-C) number of facilities
+M s-s surface-water withdrawals.1
+L (Stock) total s-s withdrawals groundwater
+Ir Total total s-s withdrawals groundwater
+D total s-s withdrawals groundwater
+A s-s surface-water withdrawals.1
+A total s-s withdrawals surface
+I s-s groundwater withdrawals.1
+NTP total s-s withdrawals.1
+PS total s-s withdrawals surface
+PS total s-s withdrawals.1
+D consumptive use.1
+FTP total s-s withdrawals.2
+GTP consumptive use
+C deliveries from public supply
+Ir Total microirrigation
+TP (CL-C) deliveries from public supply
+TP (CL-C) total s-s withdrawals
+PS s-s surface-water withdrawals.1
+GTP total s-s withdrawals surface
+Ir Crop total irrigation for crops
+D consumptive use
+PS total s-s withdrawals groundwater
+I total s-s withdrawals surface
+Ir Golf Courses s-s groundwater withdrawals for golf courses
+TTP total s-s withdrawals surface
+M total s-s withdrawals.1
+Ir Total s-s groundwater withdrawals.1
+Ir Total total s-s withdrawals surface
+NTP reclaimed wastewater
+GTP total s-s withdrawals.1
+NTP s-s surface-water withdrawals
+C consumptive use
+Ir Golf Courses sprinkler irrigation for golf courses
+D total s-s withdrawals.1
+WT reclaimed wastewater released by wastewater facilities
+PS deliveries to commercial
+HP number of offstream facilities
+L (Stock) total consumptive use
+PS deliveries to thermoelectric
+L (Stock) consumptive use.1
+L (Animal Specialties) s-s groundwater withdrawals.1
+TP (OT-C) total s-s withdrawals surface
+L (Animal Specialties) consumptive use.1
+FTP s-s surface-water withdrawals.1
+Ir Golf Courses microirrigation for golf courses
+I s-s surface-water withdrawals.1
+M total s-s withdrawals.2
+HP power generated by offstream use
+county_cd
+D s-s groundwater withdrawals
+TP (OT-C) consumptive use
+TP (CL-C) total s-s withdrawals surface
+D total s-s withdrawals
+TTP total s-s withdrawals total
+FTP s-s surface-water withdrawals
+M total s-s withdrawals groundwater

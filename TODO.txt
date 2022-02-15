@@ -9,6 +9,17 @@ Add other elements to page through html/css/js-- DONE
     Scroll lock on duration -- DONE
     Arrow guides -- DONE
 Upload webpage online -- DONE
+Organize file structure -- DONE
+Comment code -- DONE
+Fix distorted wave animation -- DONE
+
+Required:
 Design Decisions
 Development Process
+Add remove filters/deselect to viz
+
+More stuff to do:
+Mobile support
+Fix tableau image distortion
+
 
